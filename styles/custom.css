@@ -1,0 +1,38 @@
+/* Fonts */
+h1.site-title {
+  font-family: "Anton", sans-serif;
+  font-size: 8vw;
+  text-transform: uppercase;
+  word-spacing: vw;
+  color: #cc0000;
+}
+
+/* Homepage */
+#home-page {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+#home-header {
+  background-color: #000000;
+}
+
+span.homepage-subtitle {
+  color: white;
+  font-size: 1vw;
+  font-family: verdana;
+}
+
+span#homepage-subtitle-left > p {
+  padding-right: 8vw;
+}
+
+span#homepage-subtitle-right > p {
+  padding-left: 8.5vw;
+}
+
+#homepage-chiban {
+  padding-top: 1.5rem;
+  width: 3vw;
+  height: auto;
+}
