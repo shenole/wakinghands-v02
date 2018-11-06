@@ -13,10 +13,27 @@ h1.site-title {
   color: #cc0000;
 }
 
+h5.burger-nav-right {
+  margin-right: 16px;
+}
+
 /* Global */
 .page-header {
-  padding: 1rem 2rem;
-  background-color: #111111;
+  padding: 3rem 2rem;
+  background-color: #000000;
+}
+
+.global-site-title {
+  background-color: #000000;
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+}
+
+.page-content-header {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
 }
 
 .page-title {
@@ -26,26 +43,51 @@ h1.site-title {
 .page-title-left {
   text-align: left;
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 
 .burger-nav-right {
   text-align: right;
+  line-height: 0.75;
 }
 
-.content-white {
+.burger-icon {
+  width: 40px;
+  float: right;
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+.burger-span {
+  display: block;
+  padding: 2px 0px;
+  margin: 4px 0px;
   background-color: #ffffff;
-  width: 100%;
-  height: 100%;
+}
+
+.spacer-padding {
+  padding-top: 106px;
 }
 
 /* Homepage */
-#home-page {
+#page {
   overflow: hidden;
   background-color: #000000;
 }
 
 #home-header {
   background-color: #000000;
+}
+
+#home-burger-nav {
+  position: absolute;
+  top: 48px;
+  right: 20px;
+  z-index: 10;
+}
+
+#home-nav-row {
+  position: absolute;
 }
 
 span.homepage-subtitle {
@@ -70,18 +112,75 @@ span#homepage-subtitle-right > p {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 767px) {
+  .title-div {
+    width: 45%;
+    padding-top: 0.75vw;
+    margin-bottom: 16.5vh;
+  }
+  .logo-div {
+    width: 8%;
+    padding: 1vw 0 0.5vw 0;
+  }
+
+  .page-header {
+    padding: 1rem 0;
+  }
+
+  .header-right {
+    background-color: #222;
+  }
+
+  h2.page-title-left {
+    text-align: center;
+  }
+
+  #home-burger-nav {
+    text-align: center;
+    top: 103px;
+    right: 45%;
+    width: 55px;
+  }
+
+  #home-burger-spans {
+    right: 8px;
+  }
+
+  .main-burger-nav {
+    text-align: center;
+    width: 46px;
+    margin: auto;
+  }
+
+  .burger-icon {
+    position: relative;
+    margin-right: 0;
+  }
+
+  .spacer-padding {
+    padding-top: 199px;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .title-div {
     width: 45%;
-    padding-top: 14vw;
+    padding-top: 1vw;
+    margin-bottom: 10.5vh;
   }
   .logo-div {
-    width: 10%;
-    padding-top: 14vw;
+    width: 8%;
+    padding: 4vw 0 0.5vw 0;
+    margin-bottom: 10.5vh;
   }
 
   h1.site-title {
-    font-size: 11vw;
+    font-size: 12.5vw;
+  }
+
+  h5.burger-nav-right {
+    margin-right: 0;
+    margin-left: 9px;
   }
 
   span.homepage-subtitle {
@@ -99,5 +198,22 @@ span#homepage-subtitle-right > p {
   #homepage-chiban {
     width: 6vw;
     padding-top: 0;
+  }
+
+  .main-burger-nav {
+    text-align: center;
+    width: 55px;
+    margin: auto;
+  }
+
+  #home-burger-nav {
+    text-align: center;
+    top: 103px;
+    right: 45%;
+    width: 55px;
+  }
+
+  #home-burger-spans {
+    right: 0px;
   }
 }
