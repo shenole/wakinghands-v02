@@ -22,13 +22,21 @@ p {
 }
 
 /* Global */
+body.paper-background {
+  background-image: url("background01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .page-header {
   padding: 3rem 2rem;
-  background-color: #000000;
+  background-color: #010101;
 }
 
 .global-site-title {
-  background-color: #000000;
+  background-color: #010101;
   position: fixed;
   z-index: 5;
   width: 100vw;
@@ -75,7 +83,7 @@ p {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #010101;
   color: #ffffff;
   padding: 0.5rem 0rem;
   position: absolute;
